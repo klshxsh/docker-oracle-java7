@@ -18,6 +18,10 @@ RUN \
   rm -rf /var/lib/apt/lists/* && \
   rm -rf /var/cache/oracle-jdk7-installer
 
+# Other useful packages
+RUN \
+  apt-get install -y unzip
+
 # Define working directory.
 WORKDIR /data
 
